@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-EmailHandler.css" />
+    <title>Email Handler</title>
+  </head>
+  <body>
+    <div class="div-formulario">
+      <form
+        id="emailForm"
+        class="formulario"
+        action="https://formsubmit.co/hanseldelossantos1230@gmail.com"
+        method="POST"
+      >
+        <label for="email">Correo Electronico </label>
+        <input type="email" name="email" required />
+
+        <label for="subject">Asunto</label>
+        <input type="subject" name="subject" required />
+
+        <label for="message">Comentario</label>
+        <textarea name="message" id="tarea" rows="10" required></textarea>
+
+        <button type="submit">Send</button>
+
+        <input type="hidden" name="_captcha" value="false" />
+      </form>
+    </div>
+
+    <button class="logoutLblPos" id="salir" onclick="logout()">Salir</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
